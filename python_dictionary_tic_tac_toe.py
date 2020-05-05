@@ -36,3 +36,8 @@ def chooseFirst():
 		return 'Player 1'
 	else:
 		return 'Player 2'
+
+#space check
+def spaceCheck(board, position):
+	return board[position] == ' '
+
