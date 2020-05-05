@@ -19,8 +19,11 @@ def playerLetter():
 
 	while letter != 'X' and letter != 'O':
 		letter = input("Choose between 'X' and 'O': ").upper()
-	if letter = 'X':
+	if letter == 'X':
 		return ('X', 'O')
 	else:
 		return ('O', 'X')
 
+#place letter on the board
+def placeLetter(board, position, letter):
+	board[position] = letter
