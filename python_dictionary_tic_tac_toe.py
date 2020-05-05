@@ -8,7 +8,19 @@ theBoard = {'TL':' ', 'TM':' ', 'TR':' ',     #TL = TOP LEFT, TM = TOP MIDDLE , 
 
 def printBoard(board):
 	print(board['TL'] + '|' + board['TM'] + '|' + board['TR'])
-	print('--+--+--')
+	print('-+-+-')
 	print(board['ML'] + '|' + board['MM'] + '|' + board['MR'])
-	print('--+--+--')
+	print('-+-+-')
 	print(board['LL'] + '|' + board['LM'] + '|' + board['LR'])
+
+#input player's letter
+def playerLetter():
+	letter = ''
+
+	while letter != 'X' and letter != 'O':
+		letter = input("Choose between 'X' and 'O': ").upper()
+	if letter = 'X':
+		return ('X', 'O')
+	else:
+		return ('O', 'X')
+
