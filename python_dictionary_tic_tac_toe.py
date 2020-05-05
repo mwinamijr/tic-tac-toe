@@ -27,3 +27,12 @@ def playerLetter():
 #place letter on the board
 def placeLetter(board, position, letter):
 	board[position] = letter
+
+#who choose first choose first
+import random 
+def chooseFirst():
+	choice = random.randint(0, 1)
+	if choice == 0:
+		return 'Player 1'
+	else:
+		return 'Player 2'
